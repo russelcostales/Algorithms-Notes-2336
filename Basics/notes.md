@@ -1,3 +1,0 @@
-### Big O Notation
-
-Bro
