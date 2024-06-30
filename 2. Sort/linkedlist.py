@@ -1,6 +1,3 @@
-### **LinkedList**
-```python
-
 # Given a linked list:
 # ( A ) -> ( B ) -> ( C ) -> ( D ) -> ( E )
 
@@ -71,20 +68,18 @@ class LinkedList:
         self.head = new_node
         
 myLinkedList = LinkedList()
-myLinkedList.insert_first("John") #->John
-myLinkedList.insert_first("Elizabeth") #->Elizabeth->John
-myLinkedList.insert_first("Mike") #-->Mike->Elizabeth->John
-myLinkedList.insert_first("Bryan") #-->Bryan->Mike->Elizabeth->John
+myLinkedList.insert_first("John")       # -> John
+myLinkedList.insert_first("Elizabeth")  # -> Elizabeth -> John
+myLinkedList.insert_first("Mike")       # -> Mike  -> Elizabeth -> John
+myLinkedList.insert_first("Bryan")      # -> Bryan -> Mike ->Elizabeth -> John
 
-print(myLinkedList.get("")) #-> None
-print(myLinkedList.get("Bryan")) #-> Brian
-print(myLinkedList.get("Mike")) #-> Mike
+print(myLinkedList.get(""))             # -> None
+print(myLinkedList.get("Bryan"))        # -> Brian
+print(myLinkedList.get("Mike"))         # -> Mike
 
 myLinkedList.delete("Mike")
 
-print(myLinkedList.get("John")) #->John
-print(myLinkedList.get("Elizabeth")) #->Elizabeth
-print(myLinkedList.get("Mike")) #-->None
-print(myLinkedList.get("Bryan")) #-->Bryan
-
-```
+print(myLinkedList.get("John"))         # -> John
+print(myLinkedList.get("Elizabeth"))    # -> Elizabeth
+print(myLinkedList.get("Mike"))         # --> None
+print(myLinkedList.get("Bryan"))        # --> Bryan

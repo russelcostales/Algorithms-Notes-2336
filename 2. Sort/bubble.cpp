@@ -1,5 +1,3 @@
-### **Bubble Sort**
-```c++
 // This algorithm has (n + 1)(n / 2) or dropping constants, has
 // n ^ 2 time complexity runtime.
 
@@ -25,31 +23,36 @@
 
 #include <iostream>
 
-void bubbleSort(int array[], int arraySize) {
-    for (int i = arraySize; i > 0; i--) {
-        for (int j = 0; j < i - 1; j++) {
-            if (array[j] > array[j + 1]) {
-                int var = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = var;
-            }
-        }
-    }
+void bubbleSort(int array[], int arraySize)
+{
+   for (int i = arraySize; i > 0; i--)
+   {
+      for (int j = 0; j < i - 1; j++)
+      {
+         if (array[j] > array[j + 1])
+         {
+            int var = array[j];
+            array[j] = array[j + 1];
+            array[j + 1] = var;
+         }
+      }
+   }
 }
 
-int main() {
-    int array[6] = {7, 5, 3, 9, 8, 2};
-    
-    int arraySizeInBytes = sizeof(array);
-    int intSizeInBytes = sizeof(int);
-    int arraySize = arraySizeInBytes / intSizeInBytes;
-    
-    bubbleSort(array, arraySize);
-    
-    for (int i = 0; i < arraySize; i++) {
-        std :: cout << array[i];
-    }
+int main()
+{
+   int array[6] = {7, 5, 3, 9, 8, 2};
 
-    return 0;
+   int arraySizeInBytes = sizeof(array);
+   int intSizeInBytes = sizeof(int);
+   int arraySize = arraySizeInBytes / intSizeInBytes;
+
+   bubbleSort(array, arraySize);
+
+   for (int i = 0; i < arraySize; i++)
+   {
+      std ::cout << array[i];
+   }
+
+   return 0;
 }
-```
