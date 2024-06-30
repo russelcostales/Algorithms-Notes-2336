@@ -1,7 +1,8 @@
 # Data Structure Algorithms (DSA)
 ### Resource Information
 
-The resources provided contain comprehensive information about important data structures and algorithms.
+The resources provided contain comprehensive information about important data structures and algorithms. The information is compiled from:
+https://frontendmasters.com/courses/algorithms/linked-list-data-structures/
 
 **Note the following topics:**
 
