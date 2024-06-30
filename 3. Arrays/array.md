@@ -1,5 +1,3 @@
-# **Basics**
-
 ### **Array Data Structure**
 When arrays are accessed, the index of an element is multiplied by the size of each element which determines how many bytes to offset from base address. 
 
