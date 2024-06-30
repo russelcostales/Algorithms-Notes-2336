@@ -16,6 +16,14 @@
 # value = memory address of ( A ) 
 # next = memory address of ( C )
 
+# Time complexities:
+# insert head  -> o(1)
+# delete head  -> o(1)
+# get head     -> o(1)
+# insert       -> o(n)
+# delete       -> o(n)
+# get          -> o(n)
+
 class Node:
     def __init__(self, value, previous, next):
         self.value = value
